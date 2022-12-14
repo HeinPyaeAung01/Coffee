@@ -1,0 +1,48 @@
+.body
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 30px 0px;
+}
+.body ul li img
+{
+    width: 100%;
+    height: 400px;
+    cursor: pointer;
+    max-width: 450px;
+    object-fit: cover;
+    transition: 0.2s ease;
+}
+.body ul li
+{
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+.body ul li input{
+    border-radius: 10px;
+    font-size:20px;
+    color: white;
+    background-color: green;
+    margin-top:10px;
+    padding: 10px;
+    transition: 0.2s ease;
+
+}
+body ul li img:hover
+{
+    transform: scale(1.04);
+}
+
+@media screen and (max-width : 400px) {
+    .body{
+        display: grid;
+        grid-template-columns:1fr;
+    }
+    
+}
+.body ul li input:hover{
+    transform: scale(1.04);
+    color: black;
+}
